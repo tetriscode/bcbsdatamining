@@ -1,3 +1,5 @@
+CREATE DATABASE bcbs_db;
+
 CREATE TABLE 'bcbs_db'.'rawData' {
 'y' VARCHAR( 50 ) NULL,
 'x0' VARCHAR( 50 ) NULL,
