@@ -10,7 +10,7 @@ public class write {
 		output = new BufferedWriter(new FileWriter(file));
 		output.write("CREATE TABLE rawData (\n");
 		output.write("y VARCHAR( 50 ) NULL,\n");	
-		for(int i=1; i < 63; i++) {
+		for(int i=1; i < 62; i++) {
 			output.write("x" + i + " VARCHAR( 50 ) NULL,\n");
 		}
 		output.write("id VARCHAR( 50 ) NULL\n");
