@@ -14,6 +14,7 @@ What the Fields represent
 ||unk date||unk date||Household Size||Homeowner Len.||Home Type||Rent/Own||Owner Status||unk||unk||unk||
 
 ||*x20*||*x21*||*x22*||*x23*||*x24*||*x25*||*x26*||*x27*||*x28*||*x29*||
+||Race||unk||unk||unk||age||unk||unk||unk||unk||Schooling||
 
 ||*x30*||*x31*||*x32*||*x33*||*x34*||*x35*||*x36*||*x37*||*x38*||*x39*||
 
