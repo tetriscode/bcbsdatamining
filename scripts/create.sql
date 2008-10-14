@@ -1,4 +1,4 @@
-CREATE TABLE rawData (
+CREATE TABLE bcbs_db.rawData (
 y VARCHAR( 50 ) NULL,
 x1 VARCHAR( 50 ) NULL,
 x2 VARCHAR( 50 ) NULL,
