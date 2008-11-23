@@ -1,0 +1,17 @@
+USE bcbs_db;
+UPDATE newData SET y='+' WHERE y='1';
+UPDATE newData SET y='-' WHERE y='0';
+UPDATE newData SET x13='1' WHERE x13='1 Year';
+UPDATE newData SET x13='15' WHERE x13='15+ Years';
+UPDATE newData SET x13='3.5' WHERE x13='2 - 5 Years';
+UPDATE newData SET x13='10' WHERE x13='6 - 14 Years';
+UPDATE newData SET x53='112.5' WHERE x53='100 -< 125';
+UPDATE newData SET x53='17.5' WHERE x53='15 -< 20';
+UPDATE newData SET x53='150' WHERE x53='150+';
+UPDATE newData SET x53='137.5' WHERE x53='125 -< 150';
+UPDATE newData SET x53='25' WHERE x53='20 -< 30';
+UPDATE newData SET x53='40' WHERE x53='30 -< 50';
+UPDATE newData SET x53='45' WHERE x53='40 -< 50';
+UPDATE newData SET x53='67.5' WHERE x53='50 -< 75';
+UPDATE newData SET x53='87.5' WHERE x53='75 -< 100';
+UPDATE newData SET x53='15' WHERE x53='15-';
