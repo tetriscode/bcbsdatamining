@@ -1,6 +1,6 @@
 <?php
-$fh = fopen("training.csv","r");
-$fo = fopen("trainingMod.csv","w");
+$fh = fopen("test.csv","r");
+$fo = fopen("testMod.csv","w");
 
 while(($data = fgetcsv($fh,2000,",")) !== FALSE) {
 	$num = count($data);
@@ -20,11 +20,20 @@ while(($data = fgetcsv($fh,2000,",")) !== FALSE) {
 }
 
 function convertDate($str) {
+	
 	$dte = "";
-	$dte = $dte . substr($str,6,4);
-	$dte = $dte . "-" . substr($str,0,2);
-	$dte = $dte . "-" . substr($str,3,2);
-	return $dte;
+	$dateArray = array();
+	$len = strlen($str);
+	$j = 0;
+
+	for($i=0; $i<$len; $i = $i + 1) {
+		if($str[$i] == "/") {
+			$j = $j + 1;
+		} else {
+			$dateArray[$j] = $dateArray[$j] . $str[$i];
+		}
+	}
+	return $dateArray[0] . "-" . $dateArray[1] . "-" . $dateArray[2];
 }
 
 fclose($fh);
