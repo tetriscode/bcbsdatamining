@@ -1,6 +1,6 @@
 <?php
-$fh = fopen("test.csv","r");
-$fo = fopen("testMod.csv","w");
+$fh = fopen("training.csv","r");
+$fo = fopen("training2.csv","w");
 
 while(($data = fgetcsv($fh,2000,",")) !== FALSE) {
 	$num = count($data);
@@ -33,7 +33,9 @@ function convertDate($str) {
 			$dateArray[$j] = $dateArray[$j] . $str[$i];
 		}
 	}
-	return $dateArray[0] . "-" . $dateArray[1] . "-" . $dateArray[2];
+	//return $dateArray[0] . "-" . $dateArray[1] . "-" . $dateArray[2];
+	$value = ($dateArray[2] - 1950)*12 + $dateArray[0];
+	return $value;
 }
 
 fclose($fh);
