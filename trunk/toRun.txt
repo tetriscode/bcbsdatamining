@@ -1,0 +1,8 @@
+EM
+SMO
+NaiveBayes
+LinearRegression
+AdaBoost
+Decision Table
+id3
+
