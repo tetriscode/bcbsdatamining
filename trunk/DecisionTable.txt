@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S 5
+Relation:     QueryResult-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last
+Instances:    858620
+Attributes:   7
+              y
+              x4
+              x13
+              x15
+              x20
+              x22
+              x59
+Test mode:    split 66% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 858620
+Number of Rules : 1
+Non matches covered by Majority class.
+Best first search for feature set,
+terminated after 5 non improving subsets.
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 1
+
+Time taken to build model: 22.22 seconds
+
+=== Evaluation on test split ===
+=== Summary ===
+
+Correctly Classified Instances      288588               98.8549 %
+Incorrectly Classified Instances      3343                1.1451 %
+Kappa statistic                          0     
+Mean absolute error                      0.0225
+Root mean squared error                  0.1064
+Relative absolute error                 99.9925 %
+Root relative squared error            100      %
+Total Number of Instances           291931     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  1         1          0.989     1         0.994    -
+  0         0          0         0         0        +
+
+=== Confusion Matrix ===
+
+      a      b   <-- classified as
+ 288588      0 |      a = -
+   3343      0 |      b = +
+
+

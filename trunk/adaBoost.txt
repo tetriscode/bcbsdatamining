@@ -1,0 +1,279 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     QueryResult-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last
+Instances:    858620
+Attributes:   7
+              y
+              x4
+              x13
+              x15
+              x20
+              x22
+              x59
+Test mode:    split 66% train, remainder test
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+x13 = 1 : -
+x13 != 1 : -
+x13 is missing : -
+
+Class distributions
+
+x13 = 1
+-	+	
+0.986593603220756	0.013406396779244018	
+x13 != 1
+-	+	
+0.9893869967090242	0.010613003290975798	
+x13 is missing
+-	+	
+0.9886597097668351	0.011340290233164846	
+
+
+Weight: 4.47
+
+Decision Stump
+
+Classifications
+
+x13 = 1 : +
+x13 != 1 : -
+x13 is missing : +
+
+Class distributions
+
+x13 = 1
+-	+	
+0.4577355789959344	0.5422644210040656	
+x13 != 1
+-	+	
+0.5167480509718643	0.48325194902813573	
+x13 is missing
+-	+	
+0.4999999999994499	0.5000000000005501	
+
+
+Weight: 0.1
+
+Decision Stump
+
+Classifications
+
+x22 = No : -
+x22 != No : +
+x22 is missing : +
+
+Class distributions
+
+x22 = No
+-	+	
+0.5453107086444373	0.45468929135556274	
+x22 != No
+-	+	
+0.47992838794881454	0.5200716120511856	
+x22 is missing
+-	+	
+0.4896031595005864	0.5103968404994136	
+
+
+Weight: 0.1
+
+Decision Stump
+
+Classifications
+
+x13 = 15 : -
+x13 != 15 : -
+x13 is missing : -
+
+Class distributions
+
+x13 = 15
+-	+	
+0.5455674734044976	0.4544325265955024	
+x13 != 15
+-	+	
+0.5004293083137975	0.4995706916862024	
+x13 is missing
+-	+	
+0.5063785733709214	0.49362142662907854	
+
+
+Weight: 0.03
+
+Decision Stump
+
+Classifications
+
+x13 = 15 : -
+x13 != 15 : +
+x13 is missing : +
+
+Class distributions
+
+x13 = 15
+-	+	
+0.5392345149386821	0.4607654850613179	
+x13 != 15
+-	+	
+0.4940506697747516	0.5059493302252484	
+x13 is missing
+-	+	
+0.49999999999804473	0.5000000000019552	
+
+
+Weight: 0.04
+
+Decision Stump
+
+Classifications
+
+x20 = African American : +
+x20 != African American : -
+x20 is missing : -
+
+Class distributions
+
+x20 = African American
+-	+	
+0.47021461111416857	0.5297853888858314	
+x20 != African American
+-	+	
+0.5109766425855184	0.48902335741448166	
+x20 is missing
+-	+	
+0.5076144131832836	0.49238558681671646	
+
+
+Weight: 0.05
+
+Decision Stump
+
+Classifications
+
+x13 = 15 : -
+x13 != 15 : +
+x13 is missing : +
+
+Class distributions
+
+x13 = 15
+-	+	
+0.5194051280510649	0.4805948719489352	
+x13 != 15
+-	+	
+0.4937865287353649	0.506213471264635	
+x13 is missing
+-	+	
+0.4971512942634121	0.502848705736588	
+
+
+Weight: 0.03
+
+Decision Stump
+
+Classifications
+
+x22 = Yes : -
+x22 != Yes : -
+x22 is missing : -
+
+Class distributions
+
+x22 = Yes
+-	+	
+0.5002508211956812	0.4997491788043187	
+x22 != Yes
+-	+	
+0.5189599647760188	0.48104003522398114	
+x22 is missing
+-	+	
+0.5030108417035122	0.49698915829648777	
+
+
+Weight: 0.01
+
+Decision Stump
+
+Classifications
+
+x22 = Yes : +
+x22 != Yes : -
+x22 is missing : -
+
+Class distributions
+
+x22 = Yes
+-	+	
+0.4972399711584362	0.5027600288415638	
+x22 != Yes
+-	+	
+0.5159527657573721	0.4840472342426278	
+x22 is missing
+-	+	
+0.5000000000032504	0.49999999999674966	
+
+
+Weight: 0.02
+
+Decision Stump
+
+Classifications
+
+x20 = Hispanic : -
+x20 != Hispanic : -
+x20 is missing : -
+
+Class distributions
+
+x20 = Hispanic
+-	+	
+0.5193075569702443	0.4806924430297557	
+x20 != Hispanic
+-	+	
+0.5008174738434386	0.4991825261565614	
+x20 is missing
+-	+	
+0.5033179946189483	0.49668200538105167	
+
+
+Weight: 0.01
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 32.25 seconds
+
+=== Evaluation on test split ===
+=== Summary ===
+
+Correctly Classified Instances      288588               98.8549 %
+Incorrectly Classified Instances      3343                1.1451 %
+Kappa statistic                          0     
+Mean absolute error                      0.0225
+Root mean squared error                  0.1064
+Relative absolute error                 99.9072 %
+Root relative squared error             99.988  %
+Total Number of Instances           291931     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  1         1          0.989     1         0.994    -
+  0         0          0         0         0        +
+
+=== Confusion Matrix ===
+
+      a      b   <-- classified as
+ 288588      0 |      a = -
+   3343      0 |      b = +
+
+
