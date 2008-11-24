@@ -1,0 +1,66 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     QueryResult-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last
+Instances:    858620
+Attributes:   7
+              y
+              x4
+              x13
+              x15
+              x20
+              x22
+              x59
+Test mode:    split 66% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+Class -: Prior probability = 0.99
+
+x4:  Discrete Estimator. Counts =  485777 363108  (Total = 848885)
+x13:  Discrete Estimator. Counts =  244759 220554 259867 123707  (Total = 848887)
+x15:  Discrete Estimator. Counts =  632303 204293 12290  (Total = 848886)
+x20:  Discrete Estimator. Counts =  337272 269094 65733 13102 119451 30096 13922 221  (Total = 848891)
+x22:  Discrete Estimator. Counts =  139913 708972  (Total = 848885)
+x59:  Discrete Estimator. Counts =  331136 517749  (Total = 848885)
+
+
+Class +: Prior probability = 0.01
+
+x4:  Discrete Estimator. Counts =  5659 4080  (Total = 9739)
+x13:  Discrete Estimator. Counts =  2774 2998 2818 1151  (Total = 9741)
+x15:  Discrete Estimator. Counts =  7127 2483 130  (Total = 9740)
+x20:  Discrete Estimator. Counts =  3723 3255 849 151 1266 351 148 2  (Total = 9745)
+x22:  Discrete Estimator. Counts =  1285 8454  (Total = 9739)
+x59:  Discrete Estimator. Counts =  3967 5772  (Total = 9739)
+
+
+Time taken to build model: 0.52 seconds
+
+=== Evaluation on test split ===
+=== Summary ===
+
+Correctly Classified Instances      288588               98.8549 %
+Incorrectly Classified Instances      3343                1.1451 %
+Kappa statistic                          0     
+Mean absolute error                      0.0225
+Root mean squared error                  0.1064
+Relative absolute error                100.175  %
+Root relative squared error             99.9919 %
+Total Number of Instances           291931     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  1         1          0.989     1         0.994    -
+  0         0          0         0         0        +
+
+=== Confusion Matrix ===
+
+      a      b   <-- classified as
+ 288588      0 |      a = -
+   3343      0 |      b = +
+
+
