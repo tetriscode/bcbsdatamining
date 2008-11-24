@@ -51,3 +51,8 @@ UPDATE newData SET x53='45' WHERE x53='40 -< 50';
 UPDATE newData SET x53='62.5' WHERE x53='50 -< 75';
 UPDATE newData SET x53='87.5' WHERE x53='75 -< 100';
 UPDATE newData SET x53='15' WHERE x53='15-';
+UPDATE newData SET x54='y' WHERE x54='Yes';
+UPDATE newData SET x54='n' WHERE x54='No';
+UPDATE newData SET x55='y' WHERE x55='Yes';
+UPDATE newData SET x55='n' WHERE x55='No';
+
