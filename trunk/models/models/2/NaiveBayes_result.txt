@@ -1,0 +1,65 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     QueryResult-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last
+Instances:    450000
+Attributes:   7
+              y
+              x13
+              x8
+              x19
+              x25
+              x2
+              x1
+Test mode:    split 70% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+Class -: Prior probability = 0.99
+
+x13:  Discrete Estimator. Counts =  64712 115619 128079 136467  (Total = 444877)
+x8:  Discrete Estimator. Counts =  415306 10938 1 1 42 1 1 1 1 18591  (Total = 444883)
+x19:  Discrete Estimator. Counts =  299163 145712  (Total = 444875)
+x25:  Discrete Estimator. Counts =  123555 226715 68633 14244 7224 1587 1043 960 664 258  (Total = 444883)
+x2:  Discrete Estimator. Counts =  10920 40105 84405 56804 4405 28982 6111 11204 3718 6997 832 37806 5412 2925 26144 1617 7829 3928 5554 14535 5960 17354 4030 6616 4783 3476 755 3454 9216 9032 1015 3143 299 2438 1300 961 1413 482 409 1438 805 862 545 117 110 626 696 478 606 810 348 213 163 131 272 67 274  (Total = 444930)
+x1:  Normal Distribution. Mean = 48.987 StandardDev = 9.9429 WeightSum = 444873 Precision = 1.0
+
+
+Class +: Prior probability = 0.01
+
+x13:  Discrete Estimator. Counts =  608 1567 1494 1462  (Total = 5131)
+x8:  Discrete Estimator. Counts =  4643 120 1 1 1 1 1 1 1 367  (Total = 5137)
+x19:  Discrete Estimator. Counts =  3404 1725  (Total = 5129)
+x25:  Discrete Estimator. Counts =  1507 2441 853 169 107 20 14 12 8 6  (Total = 5137)
+x2:  Discrete Estimator. Counts =  116 418 922 658 50 272 61 136 69 43 20 287 67 45 262 30 114 48 61 222 77 216 56 116 64 66 10 23 145 105 20 38 10 44 39 25 31 9 7 31 15 14 7 6 3 11 17 8 9 18 9 5 2 4 10 3 10  (Total = 5184)
+x1:  Normal Distribution. Mean = 50.9524 StandardDev = 9.9615 WeightSum = 5127 Precision = 1.0
+
+
+Time taken to build model: 1.62 seconds
+
+=== Evaluation on test split ===
+=== Summary ===
+
+Correctly Classified Instances      133446               98.8489 %
+Incorrectly Classified Instances      1554                1.1511 %
+Kappa statistic                          0     
+Mean absolute error                      0.0229
+Root mean squared error                  0.1067
+Relative absolute error                101.1375 %
+Root relative squared error            100.0098 %
+Total Number of Instances           135000     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  1         1          0.988     1         0.994    -
+  0         0          0         0         0        +
+
+=== Confusion Matrix ===
+
+      a      b   <-- classified as
+ 133446      0 |      a = -
+   1554      0 |      b = +
+
