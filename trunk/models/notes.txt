@@ -1,0 +1,4 @@
+1. We dropped column x61, and id
+2. See createNewTable.sql for the current structure of the table
+3. See updateFields for the modifications to the data
+4. 
