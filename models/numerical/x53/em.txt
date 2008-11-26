@@ -1,0 +1,51 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N -1 -S 100 -M 1.0E-6
+Relation:     QueryResult
+Instances:    858620
+Attributes:   1
+              x53
+Test mode:    evaluate on training data
+
+=== Model and evaluation on training set ===
+
+
+EM
+==
+
+Number of clusters selected by cross validation: 5
+
+Cluster: 0 Prior probability: 0.4278
+
+Attribute: x53
+Normal Distribution. Mean = 62.5 StdDev = 30.5814
+
+Cluster: 1 Prior probability: 0.0795
+
+Attribute: x53
+Normal Distribution. Mean = 128.3374 StdDev = 18.1721
+
+Cluster: 2 Prior probability: 0.2022
+
+Attribute: x53
+Normal Distribution. Mean = 91.8488 StdDev = 10.759
+
+Cluster: 3 Prior probability: 0.209
+
+Attribute: x53
+Normal Distribution. Mean = 43.077 StdDev = 2.4325
+
+Cluster: 4 Prior probability: 0.0816
+
+Attribute: x53
+Normal Distribution. Mean = 20.5949 StdDev = 4.6416
+Clustered Instances
+
+0      343650 ( 40%)
+1       43455 (  5%)
+2      176601 ( 21%)
+3      204668 ( 24%)
+4       90246 ( 11%)
+
+
+Log likelihood: -4.76605
