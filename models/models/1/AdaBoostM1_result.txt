@@ -1,0 +1,278 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     QueryResult-weka.filters.unsupervised.attribute.PKIDiscretize-Rfirst-last
+Instances:    450000
+Attributes:   6
+              y
+              x13
+              x8
+              x19
+              x25
+              x2
+Test mode:    split 70% train, remainder test
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+x2 = HILLSBOROUGH : -
+x2 != HILLSBOROUGH : -
+x2 is missing : -
+
+Class distributions
+
+x2 = HILLSBOROUGH
+-	+	
+0.9927144535840188	0.007285546415981199	
+x2 != HILLSBOROUGH
+-	+	
+0.9883387376883934	0.01166126231160661	
+x2 is missing
+-	+	
+0.9887111111111111	0.011288888888888888	
+
+
+Weight: 4.47
+
+Decision Stump
+
+Classifications
+
+x2 = HILLSBOROUGH : -
+x2 != HILLSBOROUGH : +
+x2 is missing : -
+
+Class distributions
+
+x2 = HILLSBOROUGH
+-	+	
+0.6087277208454643	0.3912722791545357	
+x2 != HILLSBOROUGH
+-	+	
+0.49179319378417435	0.5082068062158257	
+x2 is missing
+-	+	
+0.5000000000000049	0.49999999999999517	
+
+
+Weight: 0.06
+
+Decision Stump
+
+Classifications
+
+x13 = 1 : +
+x13 != 1 : -
+x13 is missing : -
+
+Class distributions
+
+x13 = 1
+-	+	
+0.4694374202858957	0.5305625797141044	
+x13 != 1
+-	+	
+0.5304700626536384	0.4695299373463616	
+x13 is missing
+-	+	
+0.5131316764080955	0.4868683235919044	
+
+
+Weight: 0.12
+
+Decision Stump
+
+Classifications
+
+x2 = HILLSBOROUGH : -
+x2 != HILLSBOROUGH : +
+x2 is missing : +
+
+Class distributions
+
+x2 = HILLSBOROUGH
+-	+	
+0.5810402246762716	0.41895977532372847	
+x2 != HILLSBOROUGH
+-	+	
+0.4938973826991516	0.5061026173008484	
+x2 is missing
+-	+	
+0.49996222720506023	0.5000377727949398	
+
+
+Weight: 0.05
+
+Decision Stump
+
+Classifications
+
+x25 = '(-inf-8.5]' : +
+x25 != '(-inf-8.5]' : -
+x25 is missing : -
+
+Class distributions
+
+x25 = '(-inf-8.5]'
+-	+	
+0.42719656047719806	0.5728034395228019	
+x25 != '(-inf-8.5]'
+-	+	
+0.5141009757806301	0.48589902421936987	
+x25 is missing
+-	+	
+0.5097098305041403	0.4902901694958598	
+
+
+Weight: 0.07
+
+Decision Stump
+
+Classifications
+
+x2 = PINELLAS : -
+x2 != PINELLAS : +
+x2 is missing : +
+
+Class distributions
+
+x2 = PINELLAS
+-	+	
+0.5672281513253076	0.43277184867469237	
+x2 != PINELLAS
+-	+	
+0.48993672240189284	0.5100632775981071	
+x2 is missing
+-	+	
+0.4943608901253109	0.5056391098746891	
+
+
+Weight: 0.05
+
+Decision Stump
+
+Classifications
+
+x2 = HILLSBOROUGH : -
+x2 != HILLSBOROUGH : -
+x2 is missing : -
+
+Class distributions
+
+x2 = HILLSBOROUGH
+-	+	
+0.5679780273768599	0.43202197262314007	
+x2 != HILLSBOROUGH
+-	+	
+0.5015653567648045	0.4984346432351955	
+x2 is missing
+-	+	
+0.5061740428359219	0.493825957164078	
+
+
+Weight: 0.02
+
+Decision Stump
+
+Classifications
+
+x2 = HILLSBOROUGH : -
+x2 != HILLSBOROUGH : +
+x2 is missing : +
+
+Class distributions
+
+x2 = HILLSBOROUGH
+-	+	
+0.5619079153629466	0.43809208463705335	
+x2 != HILLSBOROUGH
+-	+	
+0.4953911357564643	0.5046088642435357	
+x2 is missing
+-	+	
+0.4999999999985368	0.5000000000014632	
+
+
+Weight: 0.03
+
+Decision Stump
+
+Classifications
+
+x13 = 15 : -
+x13 != 15 : -
+x13 is missing : -
+
+Class distributions
+
+x13 = 15
+-	+	
+0.5470474633300528	0.45295253666994717	
+x13 != 15
+-	+	
+0.5014506264826935	0.49854937351730655	
+x13 is missing
+-	+	
+0.507392357595158	0.49260764240484195	
+
+
+Weight: 0.03
+
+Decision Stump
+
+Classifications
+
+x13 = 15 : -
+x13 != 15 : +
+x13 is missing : +
+
+Class distributions
+
+x13 = 15
+-	+	
+0.539710349446796	0.460289650553204	
+x13 != 15
+-	+	
+0.49405801400773103	0.505941985992269	
+x13 is missing
+-	+	
+0.499999999996852	0.500000000003148	
+
+
+Weight: 0.04
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 18.66 seconds
+
+=== Evaluation on test split ===
+=== Summary ===
+
+Correctly Classified Instances      133474               98.8696 %
+Incorrectly Classified Instances      1526                1.1304 %
+Kappa statistic                          0     
+Mean absolute error                      0.0223
+Root mean squared error                  0.1057
+Relative absolute error                 99.785  %
+Root relative squared error             99.9831 %
+Total Number of Instances           135000     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  1         1          0.989     1         0.994    -
+  0         0          0         0         0        +
+
+=== Confusion Matrix ===
+
+      a      b   <-- classified as
+ 133474      0 |      a = -
+   1526      0 |      b = +
+
+
