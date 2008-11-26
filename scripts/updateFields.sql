@@ -56,3 +56,4 @@ UPDATE newData SET x54='n' WHERE x54='No';
 UPDATE newData SET x55='y' WHERE x55='Yes';
 UPDATE newData SET x55='n' WHERE x55='No';
 ALTER TABLE newData DROP COLUMN id;
+ALTER TABLE newData DROP COLUMN x61;
