@@ -1,0 +1,107 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     QueryResult-weka.filters.unsupervised.attribute.Discretize-O-B10-M-1.0-Rfirst-last
+Instances:    400000
+Attributes:   21
+              y
+              x2
+              x1
+              x18
+              x17
+              x26
+              x21
+              x11
+              x27
+              x7
+              x29
+              x28
+              x10
+              x8
+              x31
+              x14
+              x53
+              x25
+              x13
+              x32
+              x41
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+Class -: Prior probability = 0.99
+
+x2:  Discrete Estimator. Counts =  35524 7064 33697 75322 4955 3264 10220 5348 1464 4188 50406 8128 25314 23302 3080 3089 5808 3554 5370 2613 4812 763 12943 15557 3534 7906 4033 323 9645 92 6129 2145 417 319 1316 710 269 1250 691 1088 729 570 108 835 966 540 2794 489 444 226 615 670 280 202 149 113 52  (Total = 395434)
+x1:  Discrete Estimator. Counts =  28252 33577 25912 30456 49739 49699 35502 57193 58184 26873  (Total = 395387)
+x18:  Discrete Estimator. Counts =  141072 124226 130082  (Total = 395380)
+x17:  Discrete Estimator. Counts =  114877 157815 122688  (Total = 395380)
+x26:  Discrete Estimator. Counts =  34962 46431 82007 106337 76281 39859 8948 387 89 86  (Total = 395387)
+x21:  Discrete Estimator. Counts =  145202 121387 75796 40260 12737  (Total = 395382)
+x11:  Discrete Estimator. Counts =  139863 255516  (Total = 395379)
+x27:  Discrete Estimator. Counts =  15652 6 251 2274 45506 205244 81767 34157 9361 1169  (Total = 395387)
+x7:  Discrete Estimator. Counts =  11356 259703 31176 6147 6590 11464 8298 10138 7441 17758 9374 5044 3572 3969 1917 1044 399 2 2 2 2  (Total = 395398)
+x29:  Discrete Estimator. Counts =  19233 5015 9412 14733 22323 32062 46103 66905 98210 81391  (Total = 395387)
+x28:  Discrete Estimator. Counts =  172791 38748 107941 14492 15649 45272 366 124 3  (Total = 395386)
+x10:  Discrete Estimator. Counts =  276648 118731  (Total = 395379)
+x8:  Discrete Estimator. Counts =  369287 9557 16536  (Total = 395380)
+x31:  Discrete Estimator. Counts =  223222 64341 28786 17306 11274 10426 8174 9594 22263  (Total = 395386)
+x14:  Discrete Estimator. Counts =  319903 37065 20441 14907 512 2525 23 9  (Total = 395385)
+x53:  Discrete Estimator. Counts =  36278 58151 124272 34047 9539 13113 80882 10475 7004 21626  (Total = 395387)
+x25:  Discrete Estimator. Counts =  109993 201252 60969 12582 6539 1436 905 883 596 232  (Total = 395387)
+x13:  Discrete Estimator. Counts =  114056 102867 57299 121159  (Total = 395381)
+x32:  Discrete Estimator. Counts =  16438 3820 12627 34543 67260 100452 104528 48609 6953 157  (Total = 395387)
+x41:  Discrete Estimator. Counts =  381639 13740  (Total = 395379)
+
+
+Class +: Prior probability = 0.01
+
+x2:  Discrete Estimator. Counts =  401 99 269 793 55 69 123 59 23 55 606 134 265 247 57 19 96 44 69 38 62 14 210 203 44 94 40 2 96 3 41 32 9 8 25 13 12 32 15 37 14 9 2 17 20 12 30 10 5 5 14 4 8 7 1 6 3  (Total = 4680)
+x1:  Discrete Estimator. Counts =  264 335 251 255 454 515 394 812 957 396  (Total = 4633)
+x18:  Discrete Estimator. Counts =  1285 1334 2007  (Total = 4626)
+x17:  Discrete Estimator. Counts =  1181 1521 1924  (Total = 4626)
+x26:  Discrete Estimator. Counts =  591 638 990 1165 793 383 66 4 1 2  (Total = 4633)
+x21:  Discrete Estimator. Counts =  1716 1254 801 600 257  (Total = 4628)
+x11:  Discrete Estimator. Counts =  1548 3077  (Total = 4625)
+x27:  Discrete Estimator. Counts =  283 1 4 14 424 2277 967 507 140 16  (Total = 4633)
+x7:  Discrete Estimator. Counts =  140 3044 326 82 107 105 86 85 102 205 159 71 37 44 29 15 3 1 1 1 1  (Total = 4644)
+x29:  Discrete Estimator. Counts =  315 51 87 129 210 338 509 775 1202 1017  (Total = 4633)
+x28:  Discrete Estimator. Counts =  1890 385 1453 144 283 469 4 3 1  (Total = 4632)
+x10:  Discrete Estimator. Counts =  3153 1472  (Total = 4625)
+x8:  Discrete Estimator. Counts =  4190 130 306  (Total = 4626)
+x31:  Discrete Estimator. Counts =  2785 721 309 188 138 111 76 106 198  (Total = 4632)
+x14:  Discrete Estimator. Counts =  3628 439 377 143 3 39 1 1  (Total = 4631)
+x53:  Discrete Estimator. Counts =  449 673 1408 366 126 250 896 120 88 257  (Total = 4633)
+x25:  Discrete Estimator. Counts =  1322 2229 754 167 94 22 14 17 7 7  (Total = 4633)
+x13:  Discrete Estimator. Counts =  1287 1468 505 1367  (Total = 4627)
+x32:  Discrete Estimator. Counts =  290 47 142 371 798 1123 1138 623 96 5  (Total = 4633)
+x41:  Discrete Estimator. Counts =  4389 236  (Total = 4625)
+
+
+Time taken to build model: 0.62 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances      394838               98.7095 %
+Incorrectly Classified Instances      5162                1.2905 %
+Kappa statistic                          0.0077
+Mean absolute error                      0.0313
+Root mean squared error                  0.1164
+Relative absolute error                137.0871 %
+Root relative squared error            108.8905 %
+Total Number of Instances           400000     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  0.999     0.994      0.988     0.999     0.994    -
+  0.006     0.001      0.046     0.006     0.01     +
+
+=== Confusion Matrix ===
+
+      a      b   <-- classified as
+ 394811    566 |      a = -
+   4596     27 |      b = +
+
