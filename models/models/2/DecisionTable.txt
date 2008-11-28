@@ -1,0 +1,49 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S 5
+Relation:     QueryResult
+Instances:    400000
+Attributes:   3
+              y
+              x2
+              x1
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 400000
+Number of Rules : 1
+Non matches covered by Majority class.
+Best first search for feature set,
+terminated after 5 non improving subsets.
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 1
+
+Time taken to build model: 4.99 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances      395459               98.8648 %
+Incorrectly Classified Instances      4541                1.1353 %
+Kappa statistic                          0     
+Mean absolute error                      0.0224
+Root mean squared error                  0.1059
+Relative absolute error                 99.9882 %
+Root relative squared error            100      %
+Total Number of Instances           400000     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  1         1          0.989     1         0.994    -
+  0         0          0         0         0        +
+
+=== Confusion Matrix ===
+
+      a      b   <-- classified as
+ 395459      0 |      a = -
+   4541      0 |      b = +
+
