@@ -1,56 +1,48 @@
 === Run information ===
 
-Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
-Relation:     QueryResult-weka.filters.unsupervised.attribute.PKIDiscretize-Rfirst-last
-Instances:    450000
-Attributes:   6
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S 5
+Relation:     QueryResult
+Instances:    400000
+Attributes:   2
               y
-              x13
-              x8
-              x19
-              x25
               x2
-Test mode:    split 70.0% train, remainder test
+Test mode:    10-fold cross-validation
 
 === Classifier model (full training set) ===
 
 Decision Table:
 
-Number of training instances: 450000
+Number of training instances: 400000
 Number of Rules : 1
 Non matches covered by Majority class.
-	Best first.
-	Start set: no attributes
-	Search direction: forward
-	Stale search after 5 node expansions
-	Total number of subsets evaluated: 19
-	Merit of best subset found:   98.867
+Best first search for feature set,
+terminated after 5 non improving subsets.
 Evaluation (for feature selection): CV (leave one out) 
 Feature set: 1
 
-Time taken to build model: 314.23 seconds
+Time taken to build model: 2.01 seconds
 
-=== Evaluation on test split ===
+=== Stratified cross-validation ===
 === Summary ===
 
-Correctly Classified Instances      133456               98.8563 %
-Incorrectly Classified Instances      1544                1.1437 %
+Correctly Classified Instances      395461               98.8653 %
+Incorrectly Classified Instances      4539                1.1348 %
 Kappa statistic                          0     
-Mean absolute error                      0.0225
-Root mean squared error                  0.1063
-Relative absolute error                100.0002 %
+Mean absolute error                      0.0224
+Root mean squared error                  0.1059
+Relative absolute error                 99.9882 %
 Root relative squared error            100      %
-Total Number of Instances           135000     
+Total Number of Instances           400000     
 
 === Detailed Accuracy By Class ===
 
-TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
-  1         1          0.989     1         0.994      0.5      -
-  0         0          0         0         0          0.5      +
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  1         1          0.989     1         0.994    -
+  0         0          0         0         0        +
 
 === Confusion Matrix ===
 
       a      b   <-- classified as
- 133456      0 |      a = -
-   1544      0 |      b = +
+ 395461      0 |      a = -
+   4539      0 |      b = +
 
