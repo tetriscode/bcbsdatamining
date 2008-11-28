@@ -1,16 +1,12 @@
 === Run information ===
 
 Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
-Relation:     QueryResult-weka.filters.unsupervised.attribute.PKIDiscretize-Rfirst-last
-Instances:    450000
-Attributes:   6
+Relation:     QueryResult
+Instances:    400000
+Attributes:   2
               y
-              x13
-              x8
-              x19
-              x25
               x2
-Test mode:    split 70% train, remainder test
+Test mode:    10-fold cross-validation
 
 === Classifier model (full training set) ===
 
@@ -28,13 +24,13 @@ Class distributions
 
 x2 = HILLSBOROUGH
 -	+	
-0.9927144535840188	0.007285546415981199	
+0.9918396310094022	0.008160368990597836	
 x2 != HILLSBOROUGH
 -	+	
-0.9883387376883934	0.01166126231160661	
+0.9883581209138725	0.011641879086127512	
 x2 is missing
 -	+	
-0.9887111111111111	0.011288888888888888	
+0.9886525	0.0113475	
 
 
 Weight: 4.47
@@ -51,59 +47,13 @@ Class distributions
 
 x2 = HILLSBOROUGH
 -	+	
-0.6087277208454643	0.3912722791545357	
+0.5824712916401438	0.4175287083598563	
 x2 != HILLSBOROUGH
 -	+	
-0.49179319378417435	0.5082068062158257	
+0.4935230599012768	0.5064769400987232	
 x2 is missing
 -	+	
-0.5000000000000049	0.49999999999999517	
-
-
-Weight: 0.06
-
-Decision Stump
-
-Classifications
-
-x13 = 1 : +
-x13 != 1 : -
-x13 is missing : -
-
-Class distributions
-
-x13 = 1
--	+	
-0.4694374202858957	0.5305625797141044	
-x13 != 1
--	+	
-0.5304700626536384	0.4695299373463616	
-x13 is missing
--	+	
-0.5131316764080955	0.4868683235919044	
-
-
-Weight: 0.12
-
-Decision Stump
-
-Classifications
-
-x2 = HILLSBOROUGH : -
-x2 != HILLSBOROUGH : +
-x2 is missing : +
-
-Class distributions
-
-x2 = HILLSBOROUGH
--	+	
-0.5810402246762716	0.41895977532372847	
-x2 != HILLSBOROUGH
--	+	
-0.4938973826991516	0.5061026173008484	
-x2 is missing
--	+	
-0.49996222720506023	0.5000377727949398	
+0.5000000000000558	0.4999999999999442	
 
 
 Weight: 0.05
@@ -112,67 +62,44 @@ Decision Stump
 
 Classifications
 
-x25 = '(-inf-8.5]' : +
-x25 != '(-inf-8.5]' : -
-x25 is missing : -
-
-Class distributions
-
-x25 = '(-inf-8.5]'
--	+	
-0.42719656047719806	0.5728034395228019	
-x25 != '(-inf-8.5]'
--	+	
-0.5141009757806301	0.48589902421936987	
-x25 is missing
--	+	
-0.5097098305041403	0.4902901694958598	
-
-
-Weight: 0.07
-
-Decision Stump
-
-Classifications
-
-x2 = PINELLAS : -
-x2 != PINELLAS : +
-x2 is missing : +
-
-Class distributions
-
-x2 = PINELLAS
--	+	
-0.5672281513253076	0.43277184867469237	
-x2 != PINELLAS
--	+	
-0.48993672240189284	0.5100632775981071	
-x2 is missing
--	+	
-0.4943608901253109	0.5056391098746891	
-
-
-Weight: 0.05
-
-Decision Stump
-
-Classifications
-
-x2 = HILLSBOROUGH : -
-x2 != HILLSBOROUGH : -
+x2 = POLK : -
+x2 != POLK : -
 x2 is missing : -
 
 Class distributions
 
-x2 = HILLSBOROUGH
+x2 = POLK
 -	+	
-0.5679780273768599	0.43202197262314007	
-x2 != HILLSBOROUGH
+0.7157585573574404	0.2842414426425597	
+x2 != POLK
 -	+	
-0.5015653567648045	0.4984346432351955	
+0.5079075254346466	0.4920924745653534	
 x2 is missing
 -	+	
-0.5061740428359219	0.493825957164078	
+0.5102673890240388	0.4897326109759613	
+
+
+Weight: 0.04
+
+Decision Stump
+
+Classifications
+
+x2 = POLK : -
+x2 != POLK : +
+x2 is missing : +
+
+Class distributions
+
+x2 = POLK
+-	+	
+0.7073283270652997	0.2926716729347004	
+x2 != POLK
+-	+	
+0.49763936977346335	0.5023606302265367	
+x2 is missing
+-	+	
+0.4999999999977259	0.5000000000022741	
 
 
 Weight: 0.02
@@ -181,87 +108,156 @@ Decision Stump
 
 Classifications
 
-x2 = HILLSBOROUGH : -
-x2 != HILLSBOROUGH : +
-x2 is missing : +
+x2 = POLK : -
+x2 != POLK : -
+x2 is missing : -
 
 Class distributions
 
-x2 = HILLSBOROUGH
+x2 = POLK
 -	+	
-0.5619079153629466	0.43809208463705335	
-x2 != HILLSBOROUGH
+0.7034478302363308	0.2965521697636691	
+x2 != POLK
 -	+	
-0.4953911357564643	0.5046088642435357	
+0.5023075810705704	0.4976924189294296	
 x2 is missing
 -	+	
-0.4999999999985368	0.5000000000014632	
+0.504563402332866	0.4954365976671339	
 
 
-Weight: 0.03
-
-Decision Stump
-
-Classifications
-
-x13 = 15 : -
-x13 != 15 : -
-x13 is missing : -
-
-Class distributions
-
-x13 = 15
--	+	
-0.5470474633300528	0.45295253666994717	
-x13 != 15
--	+	
-0.5014506264826935	0.49854937351730655	
-x13 is missing
--	+	
-0.507392357595158	0.49260764240484195	
-
-
-Weight: 0.03
+Weight: 0.02
 
 Decision Stump
 
 Classifications
 
-x13 = 15 : -
-x13 != 15 : +
-x13 is missing : +
+x2 = POLK : -
+x2 != POLK : +
+x2 is missing : -
 
 Class distributions
 
-x13 = 15
+x2 = POLK
 -	+	
-0.539710349446796	0.460289650553204	
-x13 != 15
+0.6996257695835039	0.300374230416496	
+x2 != POLK
 -	+	
-0.49405801400773103	0.505941985992269	
-x13 is missing
+0.4977440837160169	0.502255916283983	
+x2 is missing
 -	+	
-0.499999999996852	0.500000000003148	
+0.500000000001303	0.49999999999869704	
 
 
-Weight: 0.04
+Weight: 0.02
+
+Decision Stump
+
+Classifications
+
+x2 = POLK : -
+x2 != POLK : -
+x2 is missing : -
+
+Class distributions
+
+x2 = POLK
+-	+	
+0.6958621039567195	0.3041378960432804	
+x2 != POLK
+-	+	
+0.5022055878487763	0.4977944121512237	
+x2 is missing
+-	+	
+0.5043620549318024	0.4956379450681975	
+
+
+Weight: 0.02
+
+Decision Stump
+
+Classifications
+
+x2 = POLK : -
+x2 != POLK : +
+x2 is missing : -
+
+Class distributions
+
+x2 = POLK
+-	+	
+0.6921567341031372	0.30784326589686284	
+x2 != POLK
+-	+	
+0.49784344992867	0.5021565500713301	
+x2 is missing
+-	+	
+0.5000000000034681	0.49999999999653183	
+
+
+Weight: 0.02
+
+Decision Stump
+
+Classifications
+
+x2 = POLK : -
+x2 != POLK : -
+x2 is missing : -
+
+Class distributions
+
+x2 = POLK
+-	+	
+0.6885095064332669	0.31149049356673314	
+x2 != POLK
+-	+	
+0.5021087595112798	0.49789124048872024	
+x2 is missing
+-	+	
+0.5041708617295434	0.4958291382704566	
+
+
+Weight: 0.02
+
+Decision Stump
+
+Classifications
+
+x2 = POLK : -
+x2 != POLK : +
+x2 is missing : -
+
+Class distributions
+
+x2 = POLK
+-	+	
+0.684920216631008	0.31507978336899195	
+x2 != POLK
+-	+	
+0.49793782523323804	0.502062174766762	
+x2 is missing
+-	+	
+0.5000000000016498	0.49999999999835026	
+
+
+Weight: 0.02
 
 Number of performed Iterations: 10
 
 
-Time taken to build model: 18.66 seconds
+Time taken to build model: 14.41 seconds
 
-=== Evaluation on test split ===
+=== Stratified cross-validation ===
 === Summary ===
 
-Correctly Classified Instances      133474               98.8696 %
-Incorrectly Classified Instances      1526                1.1304 %
+Correctly Classified Instances      395461               98.8653 %
+Incorrectly Classified Instances      4539                1.1348 %
 Kappa statistic                          0     
-Mean absolute error                      0.0223
-Root mean squared error                  0.1057
-Relative absolute error                 99.785  %
-Root relative squared error             99.9831 %
-Total Number of Instances           135000     
+Mean absolute error                      0.0225
+Root mean squared error                  0.1059
+Relative absolute error                100.381  %
+Root relative squared error             99.997  %
+Total Number of Instances           400000     
 
 === Detailed Accuracy By Class ===
 
@@ -272,7 +268,6 @@ TP Rate   FP Rate   Precision   Recall  F-Measure   Class
 === Confusion Matrix ===
 
       a      b   <-- classified as
- 133474      0 |      a = -
-   1526      0 |      b = +
-
+ 395461      0 |      a = -
+   4539      0 |      b = +
 
