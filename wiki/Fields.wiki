@@ -8,10 +8,10 @@ What the Fields represent
 = Details =
 
 ||*y*||*x1*||*x2*||*x3*||*x4*||*x5*||*x6*||*x7*||*x8*||*x9*||
-||0v1||Age||County||Gender||Status||Address?||unk||unk||unk||unk||
+||0v1||Age||County||Gender||Status||Address?||date||unk||unk||unk||
 
 ||*x10*||*x11*||*x12*||*x13*||*x14*||*x15*||*x16*||*x17*||*x18*||*x19*||
-||unk date||unk date||Household Size||Homeowner Len.||Home Type||Rent/Own||Owner Status||yes/no||yes/no||yes/no||
+||date||date||Household Size||Homeowner Len.||Home Type||Rent/Own||Owner Status||yes/no||yes/no||yes/no||
 
 ||*x20*||*x21*||*x22*||*x23*||*x24*||*x25*||*x26*||*x27*||*x28*||*x29*||
 ||Race||Town Size||yes/no||unk||age||unk||unk||unk||unk||Schooling||
