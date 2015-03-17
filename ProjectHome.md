@@ -1,0 +1,1 @@
+Blue Cross Blue Shield Data Mining Contest for Dr. Zhang's Data Mining Course at Washington University. Group Member Wes Richardet, Alan Schwartz, David Nwokeabia.
